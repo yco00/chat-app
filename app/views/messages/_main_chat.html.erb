@@ -10,38 +10,7 @@
 </div>
 
 <div class="top_right_main">
-  <div class="messages">
-    <div class="message_top">
-      <div class="contributor">
-        Tom
-      </div>
-      <div class="date">
-        2022/12/31
-      </div>
-    </div>  
-    <div class="message_main">
-      <div class="message-content">  
-        おはよう
-      </div>  
-    </div>
-  </div>
-
-  <div class="messages">
-    <div class="message_top">
-      <div class="contributor">
-        Tom
-      </div>
-      <div class="date">
-        2022/12/31
-      </div>
-    </div>  
-    <div class="message_main">
-      <div class="message-content">  
-        こんばんは
-      </div>  
-    </div>
-  </div>
-
+<%= render partial: 'message', collection: @messages %>
 </div>
 
 <div class="top_right_post_message">
