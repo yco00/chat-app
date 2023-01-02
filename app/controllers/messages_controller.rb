@@ -15,11 +15,6 @@ class MessagesController < ApplicationController
       @messages = @room.messages.includes(:user)
       render :index
     end
-    if @message.save
-      render rooms/:room_id/messages
-    else
-      render 
-    end
   end
 
 private
